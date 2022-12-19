@@ -11,6 +11,25 @@
     max-width: 900px;
     margin: auto;
     padding: 2rem;
+
+    > article {
+      padding: 2rem;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+      }
+
+      > a {
+        background-color: $red;
+        color: white;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 1rem;
+        float: right;
+      }
+    }
   }
 }
 .cartItem {
@@ -46,7 +65,7 @@
       border-radius: 5px;
       color: $red;
 
-      // to remove the increase and decreas icon from input field 
+      // to remove the increase and decreas icon from input field
       &::-webkit-inner-spin-button,
       &::-webkit-inner-spin-button {
         -webkit-appearance: none;
@@ -65,9 +84,10 @@
   }
 }
 
-
-@media screen and (max-width:600px) {
-  .cart {
-    
+@media screen and (max-width: 600px) {
+  .cart > main > article > a {
+    float: none;
+    display: block;
+    width: 100%;
   }
 }

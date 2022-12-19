@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 
   > form {
     display: flex;
@@ -65,7 +66,7 @@
       position: absolute;
       top: 50%;
       transform: translate(50%, -50%);
-      filter: drop-shadow(0 0 10px rgba(0,0,0,0.566));
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.566));
 
       > img {
         width: 100%;
